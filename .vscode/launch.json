@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "DesktopGL (Fast Debug - No Rebuild)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/console-game.DesktopGL/bin/Debug/net9.0/console_game.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/console-game.DesktopGL",
+      "stopAtEntry": false,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "DesktopGL (Build & Debug)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-desktopgl",
+      "program": "${workspaceFolder}/console-game.DesktopGL/bin/Debug/net9.0/console_game.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/console-game.DesktopGL",
+      "stopAtEntry": false,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "WindowsDX (Fast Debug - No Rebuild)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/console-game.WindowsDX/bin/Debug/net9.0-windows/console_game.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/console-game.WindowsDX",
+      "stopAtEntry": false,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "WindowsDX (Build & Debug)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-windowsdx",
+      "program": "${workspaceFolder}/console-game.WindowsDX/bin/Debug/net9.0-windows/console_game.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/console-game.WindowsDX",
+      "stopAtEntry": false,
+      "console": "integratedTerminal"
+    }
+  ]
+}
